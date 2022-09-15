@@ -14,8 +14,9 @@ function writePassword() {
 function generatePassword(){
   //collect requirement from user
   //ask for password length (8~128)
+
   let passLength = window.prompt("what is the password length do you want? (Please choose from 8~128)");
-  while(passLength < 8 || passLength >128){
+  while(passLength < 8 || passLength >128 || isNaN(passLength)){
     passLength = window.prompt("Invalid input,please input again! \n what is the password length do you want? (Please choose from 8~128)");
   }
   //create password list and initialize all required password component list.
