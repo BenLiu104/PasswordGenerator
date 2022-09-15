@@ -64,7 +64,7 @@ while(!isTypeChosen){
     }
 
     if (!isTypeChosen) {
-      window.alert("Please at least choose one type of password.")
+      window.alert("Please at least choose one type of Lowercase/Uppercase/Number/Special character for password.")
     }
     console.log(passwordlist);
 }
